@@ -131,4 +131,17 @@
     $('#mobile-nav').toggleClass('off');
   });
 
+  var stars = new Array(
+      '愿有人陪你颠沛流离 —— 卢思浩',
+      '愿你有酒有肉有朋友',
+      '我有酒有肉 你有故事吗 ',
+      'Young For You —— GALA',
+      '为了心中的美好 不妥协直到变老 —— GALA',
+      '你是人间的四月天 —— 林徽因',
+      '一身诗意千寻瀑 万古人间四月天 —— 金岳霖',
+      '我只想要拉住流年 好好的说声再见 —— 雷雨心',
+      '把能带走的都丢弃 把能回忆的都忘记 —— 小果'
+  );
+  var stars_n = Math.floor(Math.random() * stars.length + 1)-1;
+  $("#footer-star").html(stars[stars_n]);
 })(jQuery);
