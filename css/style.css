@@ -1141,6 +1141,7 @@ a.article-title:hover {
   text-decoration: underline;
 }
 #footer-info {
+  margin-left: 50px;
   line-height: 20px;
 }
 #footer-info .logo {
@@ -1149,6 +1150,7 @@ a.article-title:hover {
 @media screen and (max-width: 479px) {
   #footer-info {
     float: none;
+    margin-left: 0;
   }
 }
 #footer-star {
