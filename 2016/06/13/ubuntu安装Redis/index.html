@@ -3,17 +3,51 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: shell | leeong&#39;s blog</title>
+  <title>ubuntu安装Redis | leeong&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="php/jquery/linux/thinkphp/cms">
-<meta property="og:type" content="website">
-<meta property="og:title" content="leeong's blog">
-<meta property="og:url" content="http://www.leeong.cn/categories/OS/shell/index.html">
+  <meta name="description" content="以下是安装步骤:
+以管理员身份进入 /usr/ 目录
+12$ sudo su# cd /usr/
+
+安装 Redis 服务
+1# apt-get install redis-server
+
+安装完成后，服务会自动启动。检查 Redis 服务器程序
+1# ps -aux|grep redis
+
+Redis 默认端口号6379, 检查 Redis 服务器状态
+1# netstat -nlt|grep">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu安装Redis">
+<meta property="og:url" content="http://www.leeong.cn/2016/06/13/ubuntu安装Redis/index.html">
 <meta property="og:site_name" content="leeong's blog">
-<meta property="og:description" content="php/jquery/linux/thinkphp/cms">
+<meta property="og:description" content="以下是安装步骤:
+以管理员身份进入 /usr/ 目录
+12$ sudo su# cd /usr/
+
+安装 Redis 服务
+1# apt-get install redis-server
+
+安装完成后，服务会自动启动。检查 Redis 服务器程序
+1# ps -aux|grep redis
+
+Redis 默认端口号6379, 检查 Redis 服务器状态
+1# netstat -nlt|grep">
+<meta property="og:updated_time" content="2016-06-13T09:20:50.824Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leeong's blog">
-<meta name="twitter:description" content="php/jquery/linux/thinkphp/cms">
+<meta name="twitter:title" content="ubuntu安装Redis">
+<meta name="twitter:description" content="以下是安装步骤:
+以管理员身份进入 /usr/ 目录
+12$ sudo su# cd /usr/
+
+安装 Redis 服务
+1# apt-get install redis-server
+
+安装完成后，服务会自动启动。检查 Redis 服务器程序
+1# ps -aux|grep redis
+
+Redis 默认端口号6379, 检查 Redis 服务器状态
+1# netstat -nlt|grep">
   
   
     <link rel="icon" href="/css/images/favicon.png">
@@ -152,58 +186,76 @@
   
 </aside>
         
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/31/linux压缩和备份命令/" class="archive-article-date">
-  <time datetime="2016-05-31T02:14:55.000Z" itemprop="datePublished">5月 31</time>
+        <section id="main"><article id="post-ubuntu安装Redis" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/13/ubuntu安装Redis/" class="article-date">
+  <time datetime="2016-06-13T08:29:42.000Z" itemprop="datePublished">2016-06-13</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/DB/">DB</a>►<a class="article-category-link" href="/categories/DB/Redis/">Redis</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/31/linux压缩和备份命令/">linux压缩和备份命令</a>
+    <h1 class="article-title" itemprop="name">
+      ubuntu安装Redis
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/30/linux文件查找命令find/" class="archive-article-date">
-  <time datetime="2016-05-30T02:39:02.000Z" itemprop="datePublished">5月 30</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/30/linux文件查找命令find/">linux文件查找命令find</a>
-    </h1>
-  
+        <h3 id="以下是安装步骤"><a href="#以下是安装步骤" class="headerlink" title="以下是安装步骤:"></a>以下是安装步骤:</h3><ol>
+<li><p>以管理员身份进入 <code>/usr/</code> 目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo su</span><br><span class="line"># cd /usr/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装 <code>Redis</code> 服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># apt-get install redis-server</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装完成后，服务会自动启动。检查 <code>Redis</code> 服务器程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ps -aux|grep redis</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>Redis</code> 默认端口号6379, 检查 <code>Redis</code> 服务器状态</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># netstat -nlt|grep 6379</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>命令行启动客户端程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ redis-cli</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>对于那些不习惯用命令行的同学，推荐一款 <code>Redis</code> 可视化图形管理工具 <a href="https://github.com/uglide/RedisDesktopManager/" title="Redis Desktop Manager" target="_blank" rel="external"><code>Redis Desktop Manager</code></a> ,支持 <code>Mac OS X</code> ， <code>Windows</code> , <code>Ubuntu</code> 还有源码安装。</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.leeong.cn/2016/06/13/ubuntu安装Redis/" data-id="cipds2scc000isn44qoneo6t1" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Redis/">Redis</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/02/今天又建了一张表/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">今天又建了一张表</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
       </div>
       <footer id="footer">
