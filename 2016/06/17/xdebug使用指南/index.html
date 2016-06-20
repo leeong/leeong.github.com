@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>leeong&#39;s blog</title>
+  <title>xdebug使用指南 | leeong&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="php/jquery/linux/thinkphp/cms">
-<meta property="og:type" content="website">
-<meta property="og:title" content="leeong's blog">
-<meta property="og:url" content="http://www.leeong.cn/index.html">
+  <meta name="description" content="查看xdebug官方手册，对手册里出现的一些调用方法进行翻译及记录。123456789101112131415161718192021222324252627282930xdebug_call_class();    //调用的类名xdebug_call_file();     //调用的文件的绝对地址xdebug_call_line();     //调用方法在文件的行数xdebug_call_">
+<meta property="og:type" content="article">
+<meta property="og:title" content="xdebug使用指南">
+<meta property="og:url" content="http://www.leeong.cn/2016/06/17/xdebug使用指南/index.html">
 <meta property="og:site_name" content="leeong's blog">
-<meta property="og:description" content="php/jquery/linux/thinkphp/cms">
+<meta property="og:description" content="查看xdebug官方手册，对手册里出现的一些调用方法进行翻译及记录。123456789101112131415161718192021222324252627282930xdebug_call_class();    //调用的类名xdebug_call_file();     //调用的文件的绝对地址xdebug_call_line();     //调用方法在文件的行数xdebug_call_">
+<meta property="og:updated_time" content="2016-06-20T03:14:12.139Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leeong's blog">
-<meta name="twitter:description" content="php/jquery/linux/thinkphp/cms">
+<meta name="twitter:title" content="xdebug使用指南">
+<meta name="twitter:description" content="查看xdebug官方手册，对手册里出现的一些调用方法进行翻译及记录。123456789101112131415161718192021222324252627282930xdebug_call_class();    //调用的类名xdebug_call_file();     //调用的文件的绝对地址xdebug_call_line();     //调用方法在文件的行数xdebug_call_">
   
   
     <link rel="icon" href="/css/images/favicon.png">
@@ -152,9 +153,7 @@
   
 </aside>
         
-        <section id="main">
-  
-    <article id="post-xdebug使用指南" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-xdebug使用指南" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/17/xdebug使用指南/" class="article-date">
   <time datetime="2016-06-17T02:45:27.000Z" itemprop="datePublished">6月 17日</time>
@@ -172,8 +171,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/17/xdebug使用指南/">xdebug使用指南</a>
+    <h1 class="article-title" itemprop="name">
+      xdebug使用指南
     </h1>
   
 
@@ -196,76 +195,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-ubuntu安装Redis" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/13/ubuntu安装Redis/" class="article-date">
-  <time datetime="2016-06-13T08:29:42.000Z" itemprop="datePublished">6月 13日</time>
-</a>
-
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/DB/">DB</a>►<a class="article-category-link" href="/categories/DB/Redis/">Redis</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/13/ubuntu安装Redis/">ubuntu安装Redis</a>
-    </h1>
+    <a href="/2016/06/13/ubuntu安装Redis/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ubuntu安装Redis</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="以下是安装步骤"><a href="#以下是安装步骤" class="headerlink" title="以下是安装步骤:"></a>以下是安装步骤:</h3><ol>
-<li><p>以管理员身份进入 <code>/usr/</code> 目录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo su</span><br><span class="line"># cd /usr/</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装 <code>Redis</code> 服务</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># apt-get install redis-server</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装完成后，服务会自动启动。检查 <code>Redis</code> 服务器程序</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># ps -aux|grep redis</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>Redis</code> 默认端口号6379, 检查 <code>Redis</code> 服务器状态</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># netstat -nlt|grep 6379</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>命令行启动客户端程序</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ redis-cli</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>对于那些不习惯用命令行的同学，推荐一款 <code>Redis</code> 可视化图形管理工具 <a href="https://github.com/uglide/RedisDesktopManager/" title="Redis Desktop Manager" target="_blank" rel="external"><code>Redis Desktop Manager</code></a> ,支持 <code>Mac OS X</code> ， <code>Windows</code> , <code>Ubuntu</code> 还有源码安装。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2016/06/13/ubuntu安装Redis/" data-id="cipng5vvy0028q544hbafcn2e" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Redis/">Redis</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 </section>
       </div>
