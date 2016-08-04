@@ -3,17 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016/5 | leeong&#39;s blog</title>
+  <title>PHP导出CSV文件的编码BUG | leeong&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="php/jquery/linux/thinkphp/cms">
-<meta property="og:type" content="website">
-<meta property="og:title" content="leeong's blog">
-<meta property="og:url" content="http://www.leeong.cn/archives/2016/05/index.html">
+  <meta name="description" content="BUG描述： 今天使用PHP导出CSV文件发现在windows下使用Office excel打开的时候乱码，而用WPS打开却是正常的。
+
+原因： 百度了下才知道，是因为创建的文件没有BOM，而Windows就是使用BOM来标记文本文件的编码方式的。需要做的就是在文件的开头加上EF BB BF的字符来告诉系统是UTF-8的文件。下面上代码：
+
+
+12345678910111213141516171">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PHP导出CSV文件的编码BUG">
+<meta property="og:url" content="http://www.leeong.cn/2016/08/04/PHP导出CSV文件的编码BUG/index.html">
 <meta property="og:site_name" content="leeong's blog">
-<meta property="og:description" content="php/jquery/linux/thinkphp/cms">
+<meta property="og:description" content="BUG描述： 今天使用PHP导出CSV文件发现在windows下使用Office excel打开的时候乱码，而用WPS打开却是正常的。
+
+原因： 百度了下才知道，是因为创建的文件没有BOM，而Windows就是使用BOM来标记文本文件的编码方式的。需要做的就是在文件的开头加上EF BB BF的字符来告诉系统是UTF-8的文件。下面上代码：
+
+
+12345678910111213141516171">
+<meta property="og:updated_time" content="2016-08-04T08:59:28.552Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leeong's blog">
-<meta name="twitter:description" content="php/jquery/linux/thinkphp/cms">
+<meta name="twitter:title" content="PHP导出CSV文件的编码BUG">
+<meta name="twitter:description" content="BUG描述： 今天使用PHP导出CSV文件发现在windows下使用Office excel打开的时候乱码，而用WPS打开却是正常的。
+
+原因： 百度了下才知道，是因为创建的文件没有BOM，而Windows就是使用BOM来标记文本文件的编码方式的。需要做的就是在文件的开头加上EF BB BF的字符来告诉系统是UTF-8的文件。下面上代码：
+
+
+12345678910111213141516171">
   
   
     <link rel="icon" href="/css/images/favicon.png">
@@ -152,62 +168,65 @@
   
 </aside>
         
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/31/linux压缩和备份命令/" class="archive-article-date">
-  <time datetime="2016-05-31T02:14:55.000Z" itemprop="datePublished">5月 31日</time>
+        <section id="main"><article id="post-PHP导出CSV文件的编码BUG" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/08/04/PHP导出CSV文件的编码BUG/" class="article-date">
+  <time datetime="2016-08-04T08:38:34.000Z" itemprop="datePublished">8月 4日</time>
 </a>
 
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>►<a class="article-category-link" href="/categories/PHP/Others/">Others</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/31/linux压缩和备份命令/">linux压缩和备份命令</a>
+    <h1 class="article-title" itemprop="name">
+      PHP导出CSV文件的编码BUG
     </h1>
   
 
-    </header>
-  </div>
-</article>
-
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/30/linux文件查找命令find/" class="archive-article-date">
-  <time datetime="2016-05-30T02:39:02.000Z" itemprop="datePublished">5月 30日</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p><strong>BUG描述：</strong><br> 今天使用PHP导出CSV文件发现在windows下使用Office excel打开的时候乱码，而用WPS打开却是正常的。</p>
+</li>
+<li><p><strong>原因：</strong><br> 百度了下才知道，是因为创建的文件没有BOM，而Windows就是使用BOM来标记文本文件的编码方式的。需要做的就是在文件的开头加上EF BB BF的字符来告诉系统是UTF-8的文件。下面上代码：</p>
+</li>
+</ol>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$fileUrl = <span class="string">'fileName.csv'</span>;</span><br><span class="line">$fp = fopen($fileUrl, <span class="string">'wb'</span>);</span><br><span class="line"><span class="comment">//添加文件bom头，识别UTF-8编码</span></span><br><span class="line">fwrite($fp,chr(<span class="number">0xEF</span>).chr(<span class="number">0xBB</span>).chr(<span class="number">0xBF</span>));</span><br><span class="line">fputcsv($fp, $array);</span><br><span class="line">fclose($fp);</span><br><span class="line"><span class="comment">//下载文件</span></span><br><span class="line">$fileName=basename($fileUrl);</span><br><span class="line">header(<span class="string">'Content-Description: File Transfer'</span>);</span><br><span class="line">header(<span class="string">'Content-Type: application/octet-stream'</span>);</span><br><span class="line">header(<span class="string">'Content-Disposition: attachment; filename='</span>.$fileUrl);</span><br><span class="line">header(<span class="string">'Content-Transfer-Encoding: binary'</span>);</span><br><span class="line">header(<span class="string">'Expires: 0'</span>);</span><br><span class="line">header(<span class="string">'Cache-Control: must-revalidate, post-check=0, pre-check=0'</span>);</span><br><span class="line">header(<span class="string">'Pragma: public'</span>);</span><br><span class="line">header(<span class="string">'Content-Length: '</span> . filesize($fileUrl));</span><br><span class="line">ob_clean();</span><br><span class="line">flush();</span><br><span class="line">readfile($fileUrl);</span><br><span class="line">unlink($fileUrl);</span><br></pre></td></tr></table></figure>
 
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/30/linux文件查找命令find/">linux文件查找命令find</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.leeong.cn/2016/08/04/PHP导出CSV文件的编码BUG/" data-id="cirg2q0z10004lv441kva51e9" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/其它/">其它</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/13/中国一点都不能少/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">中国一点都不能少</div>
+    </a>
+  
+</nav>
 
   
-  
-    </div></section>
-  
+</article>
 
 </section>
       </div>
