@@ -71,6 +71,5 @@
 		loading();
 		//滚动执行
 		params.container.bind("scroll", loading);
-        setTimeout(loading,200);
 	};
 })(jQuery);

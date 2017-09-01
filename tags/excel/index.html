@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>linux文件查找命令locate | leeong&#39;s blog</title>
+  <title>Tag: excel | leeong&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="locate 命令让使用者可以很快速的搜寻系统内是否有指定的文件。其方法是先建立一个包括系统内所有文件名称及路径的数据库，之后当寻找时就只需查询这个数据库，而不必实际深入文件系统之中了。locate 数据库由另一个叫做 updatedb 的程序创建。通常，这个程序作为一个 cron 工作例程周期性运转；也就是说，一个任务在特定的时间间隔内被 cron 守护进程执行。大多数装有 locate 的系统">
-<meta name="keywords" content="shell">
-<meta property="og:type" content="article">
-<meta property="og:title" content="linux文件查找命令locate">
-<meta property="og:url" content="http://www.leeong.cn/2016/05/30/linux文件查找命令locate/index.html">
+  <meta name="description" content="php/jquery/linux/thinkphp/cms">
+<meta property="og:type" content="website">
+<meta property="og:title" content="leeong&#39;s blog">
+<meta property="og:url" content="http://www.leeong.cn/tags/excel/index.html">
 <meta property="og:site_name" content="leeong&#39;s blog">
-<meta property="og:description" content="locate 命令让使用者可以很快速的搜寻系统内是否有指定的文件。其方法是先建立一个包括系统内所有文件名称及路径的数据库，之后当寻找时就只需查询这个数据库，而不必实际深入文件系统之中了。locate 数据库由另一个叫做 updatedb 的程序创建。通常，这个程序作为一个 cron 工作例程周期性运转；也就是说，一个任务在特定的时间间隔内被 cron 守护进程执行。大多数装有 locate 的系统">
+<meta property="og:description" content="php/jquery/linux/thinkphp/cms">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2016-05-30T07:48:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="linux文件查找命令locate">
-<meta name="twitter:description" content="locate 命令让使用者可以很快速的搜寻系统内是否有指定的文件。其方法是先建立一个包括系统内所有文件名称及路径的数据库，之后当寻找时就只需查询这个数据库，而不必实际深入文件系统之中了。locate 数据库由另一个叫做 updatedb 的程序创建。通常，这个程序作为一个 cron 工作例程周期性运转；也就是说，一个任务在特定的时间间隔内被 cron 守护进程执行。大多数装有 locate 的系统">
+<meta name="twitter:title" content="leeong&#39;s blog">
+<meta name="twitter:description" content="php/jquery/linux/thinkphp/cms">
   
   
     <link rel="icon" href="/css/images/favicon.png">
@@ -153,160 +151,41 @@
   
 </aside>
         
-        <section id="main"><article id="post-linux文件查找命令locate" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/30/linux文件查找命令locate/" class="article-date">
-  <time datetime="2016-05-30T02:38:53.000Z" itemprop="datePublished">2016-05-30</time>
+        <section id="main">
+  
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2016" class="archive-year">2016</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2016/10/21/phpexcel扩展手册/" class="archive-article-date">
+  <time datetime="2016-10-21T01:00:16.000Z" itemprop="datePublished">10月 21</time>
 </a>
 
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/OS/">OS</a>►<a class="article-category-link" href="/categories/OS/shell/">shell</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      
   
-    <h1 class="article-title" itemprop="name">
-      linux文件查找命令locate
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2016/10/21/phpexcel扩展手册/">phpexcel扩展手册</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><code>locate</code> 命令让使用者可以很快速的搜寻系统内是否有指定的文件。其方法是先建立一个包括系统内所有文件名称及路径的数据库，之后当寻找时就只需查询这个数据库，而不必实际深入文件系统之中了。<code>locate</code> 数据库由另一个叫做 <code>updatedb</code> 的程序创建。通常，这个程序作为一个 <code>cron</code> 工作例程周期性运转；也就是说，一个任务在特定的时间间隔内被 <code>cron</code> 守护进程执行。大多数装有 <code>locate</code> 的系统会每隔一天运行一回 <code>updatedb</code> 程序。因为数据库不能被持续地更新，所以当使用 <code>locate</code> 时，你会发现 目前最新的文件不会出现。为了克服这个问题，可以手动运行 <code>updatedb</code> 程序， 更改为超级用户身份，在提示符下运行 <code>updatedb</code> 命令。</p>
-<ul>
-<li><p><strong>命令格式</strong><br>  <code>locate [OPTION]... [PATTERN]...</code></p>
-</li>
-<li><p><strong>命令参数</strong></p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>简拼</th>
-<th>全拼</th>
-<th>示意</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>-A</code></td>
-<td><code>--all</code></td>
-<td>打印匹配所有匹配的条目</td>
-</tr>
-<tr>
-<td><code>-b</code></td>
-<td><code>--basename</code></td>
-<td>打印匹配文件名的条目</td>
-</tr>
-<tr>
-<td><code>-c</code></td>
-<td><code>--count</code></td>
-<td>打印匹配文件名的条目</td>
-</tr>
-<tr>
-<td><code>-d</code></td>
-<td><code>--database DBPATH</code></td>
-<td>使用新的locate数据库替代默认数据库(<code>/var/lib/mlocate/mlocate.db</code>)</td>
-</tr>
-<tr>
-<td><code>-e</code></td>
-<td><code>--existing</code></td>
-<td>只打印现有的文件</td>
-</tr>
-<tr>
-<td><code>-L</code></td>
-<td><code>--follow</code></td>
-<td>打印符号链接指向的条目</td>
-</tr>
-<tr>
-<td><code>-h</code></td>
-<td><code>--help</code></td>
-<td>打印符号链接指向的条目</td>
-</tr>
-<tr>
-<td><code>-i</code></td>
-<td><code>--ignore-case</code></td>
-<td>打印匹配忽略大小写的条目</td>
-</tr>
-<tr>
-<td><code>-l</code></td>
-<td><code>--limit, -n LIMIT</code></td>
-<td>打印匹配数量的的条目</td>
-</tr>
-<tr>
-<td><code>-P</code></td>
-<td><code>--nofollow, -n LIMIT</code></td>
-<td>打印匹配数量的的条目</td>
-</tr>
-<tr>
-<td><code>-S</code></td>
-<td><code>--statistics</code></td>
-<td>不搜索条目，打印统计信息使用的数据库</td>
-</tr>
-<tr>
-<td><code>-q</code></td>
-<td><code>--quiet</code></td>
-<td>安静模式，不会显示任何错误讯息</td>
-</tr>
-<tr>
-<td><code>-r</code></td>
-<td><code>--regexp REGEXP</code></td>
-<td>使用正则匹配</td>
-</tr>
-<tr>
-<td><code>-w</code></td>
-<td><code>--wholename</code></td>
-<td>使用全名称呢个匹配</td>
-</tr>
-<tr>
-<td><code>-V</code></td>
-<td><code>--version</code></td>
-<td>打印版本信息</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2016/05/30/linux文件查找命令locate/" data-id="cj71usinz000l86k3i63bw7gq" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/">shell</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/05/30/linux文件查找命令find/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          linux文件查找命令find
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/05/27/在linux上使用less查看文件/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">在linux上使用less查看文件</div>
-    </a>
-  
-</nav>
+</article>
 
   
-</article>
+  
+    </div></section>
+  
 
 </section>
       </div>
