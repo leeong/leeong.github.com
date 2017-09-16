@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Category: DB | leeong&#39;s blog</title>
+  <title>RBAC-基于角色的访问控制 | leeong&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="php/jquery/linux/thinkphp/cms">
-<meta property="og:type" content="website">
-<meta property="og:title" content="leeong&#39;s blog">
-<meta property="og:url" content="http://www.leeong.cn/categories/DB/index.html">
+  <meta name="description" content="RBAC(以角色为基础的访问控制: Role-based access control)资讯安全领域中，一种广为使用的访问控制机制，其不同于强制访问控制以及自由选定访问控制直接赋予使用者权限，而是将权限赋予角色。以角色为基础的访问控制模型是一套较强制访问控制以及自由选定访问控制更为中性且更具灵活性的访问控制技术。 定义在一个组织中，会因为不同的作业功能产生不同的角色，执行某项操作的权限会被赋予特定">
+<meta name="keywords" content="权限控制">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RBAC-基于角色的访问控制">
+<meta property="og:url" content="http://www.leeong.cn/2017/09/16/RBAC-基于角色的访问控制/index.html">
 <meta property="og:site_name" content="leeong&#39;s blog">
-<meta property="og:description" content="php/jquery/linux/thinkphp/cms">
+<meta property="og:description" content="RBAC(以角色为基础的访问控制: Role-based access control)资讯安全领域中，一种广为使用的访问控制机制，其不同于强制访问控制以及自由选定访问控制直接赋予使用者权限，而是将权限赋予角色。以角色为基础的访问控制模型是一套较强制访问控制以及自由选定访问控制更为中性且更具灵活性的访问控制技术。 定义在一个组织中，会因为不同的作业功能产生不同的角色，执行某项操作的权限会被赋予特定">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2017-09-16T09:43:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leeong&#39;s blog">
-<meta name="twitter:description" content="php/jquery/linux/thinkphp/cms">
+<meta name="twitter:title" content="RBAC-基于角色的访问控制">
+<meta name="twitter:description" content="RBAC(以角色为基础的访问控制: Role-based access control)资讯安全领域中，一种广为使用的访问控制机制，其不同于强制访问控制以及自由选定访问控制直接赋予使用者权限，而是将权限赋予角色。以角色为基础的访问控制模型是一套较强制访问控制以及自由选定访问控制更为中性且更具灵活性的访问控制技术。 定义在一个组织中，会因为不同的作业功能产生不同的角色，执行某项操作的权限会被赋予特定">
   
   
     <link rel="icon" href="/css/images/favicon.png">
@@ -151,62 +153,83 @@
   
 </aside>
         
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/06/13/ubuntu安装Redis/" class="archive-article-date">
-  <time datetime="2016-06-13T08:29:42.000Z" itemprop="datePublished">6月 13</time>
+        <section id="main"><article id="post-RBAC-基于角色的访问控制" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/09/16/RBAC-基于角色的访问控制/" class="article-date">
+  <time datetime="2017-09-16T09:11:52.000Z" itemprop="datePublished">2017-09-16</time>
 </a>
 
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Others/">Others</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/13/ubuntu安装Redis/">ubuntu安装Redis</a>
+    <h1 class="article-title" itemprop="name">
+      RBAC-基于角色的访问控制
     </h1>
   
 
-    </header>
-  </div>
-</article>
-
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/05/20/MySQL备份数据库/" class="archive-article-date">
-  <time datetime="2016-05-20T06:40:54.000Z" itemprop="datePublished">5月 20</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="RBAC-以角色为基础的访问控制-Role-based-access-control"><a href="#RBAC-以角色为基础的访问控制-Role-based-access-control" class="headerlink" title="RBAC(以角色为基础的访问控制: Role-based access control)"></a>RBAC(以角色为基础的访问控制: Role-based access control)</h3><p>资讯安全领域中，一种广为使用的访问控制机制，其不同于强制访问控制以及自由选定访问控制直接赋予使用者权限，而是将权限赋予角色。<br>以角色为基础的访问控制模型是一套较强制访问控制以及自由选定访问控制更为中性且更具灵活性的访问控制技术。</p>
+<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>在一个组织中，会因为不同的作业功能产生不同的角色，执行某项操作的权限会被赋予特定的角色。组织成员或者工作人员（抑或其它系统用户）则被赋予不同的角色，这些用户通过被赋予角色来取得执行某项计算机系统功能的权限。</p>
+<ul>
+<li>S = 主体 = 一名使用者或自动代理人</li>
+<li>R = 角色 = 被定义为一个授权等级的工作职位或职称</li>
+<li>P = 权限 = 一种存取资源的方式</li>
+<li>SE = 会期 = S，R或P之间的映射关系</li>
+<li>SA = 主体指派</li>
+<li>PA = 权限指派</li>
+<li>RH = 角色阶层。能被表示为：≥（x ≥ y 代表 x 继承 y 的权限）</li>
+</ul>
+<p>RBAC具有以下特征</p>
+<ul>
+<li>一个主体可对应多个角色。</li>
+<li>一个角色可对应多个主体。</li>
+<li>一个角色可拥有多个权限。</li>
+<li>一种权限可被分配给许多个角色。</li>
+<li>一个角色可以有专属于自己的权限。</li>
+</ul>
+<p>所以，用集合论的符号：</p>
+<ul>
+<li><em>PA &sube; P x R</em>  是一个多对多的权限分配方式。</li>
+<li><em>SA &sube; S x R</em>  是一个多对多的主体指派方式。</li>
+<li><em>RH &sube; R x R</em></li>
+</ul>
 
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/05/20/MySQL备份数据库/">MySQL备份数据库</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://www.leeong.cn/2017/09/16/RBAC-基于角色的访问控制/" data-id="cj7n3iwo200051fk30npanbdc" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/权限控制/">权限控制</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/10/21/phpexcel扩展手册/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">phpexcel扩展手册</div>
+    </a>
+  
+</nav>
 
   
-  
-    </div></section>
-  
+</article>
 
 </section>
       </div>
