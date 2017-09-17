@@ -3,20 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>shell特性之通配符 | leeong&#39;s blog</title>
+  <title>Tag: 摘录 | leeong&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="向想学 linux shell 的同学们推荐一本书 TLCL(The Linux Command Line) 。 正则可谓无处不在, shell 里面的文字处理大家应该都在计算机上接触过, 像 ? 跟 * 这样的在计算机课上都有介绍。 平常总会在系统内对文件进行一些批量操作, 光会这俩已经不足以解决问题了。所以适当深化技能还是很有必要的。下面是对shell字符匹配及其应用的一些总结。来源大部分来自">
-<meta name="keywords" content="shell">
-<meta property="og:type" content="article">
-<meta property="og:title" content="shell特性之通配符">
-<meta property="og:url" content="http://www.leeong.cn/2016/05/25/shell特性之通配符/index.html">
+  <meta name="description" content="php/jquery/linux/thinkphp/cms">
+<meta property="og:type" content="website">
+<meta property="og:title" content="leeong&#39;s blog">
+<meta property="og:url" content="http://www.leeong.cn/tags/摘录/index.html">
 <meta property="og:site_name" content="leeong&#39;s blog">
-<meta property="og:description" content="向想学 linux shell 的同学们推荐一本书 TLCL(The Linux Command Line) 。 正则可谓无处不在, shell 里面的文字处理大家应该都在计算机上接触过, 像 ? 跟 * 这样的在计算机课上都有介绍。 平常总会在系统内对文件进行一些批量操作, 光会这俩已经不足以解决问题了。所以适当深化技能还是很有必要的。下面是对shell字符匹配及其应用的一些总结。来源大部分来自">
+<meta property="og:description" content="php/jquery/linux/thinkphp/cms">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2016-05-25T08:04:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="shell特性之通配符">
-<meta name="twitter:description" content="向想学 linux shell 的同学们推荐一本书 TLCL(The Linux Command Line) 。 正则可谓无处不在, shell 里面的文字处理大家应该都在计算机上接触过, 像 ? 跟 * 这样的在计算机课上都有介绍。 平常总会在系统内对文件进行一些批量操作, 光会这俩已经不足以解决问题了。所以适当深化技能还是很有必要的。下面是对shell字符匹配及其应用的一些总结。来源大部分来自">
+<meta name="twitter:title" content="leeong&#39;s blog">
+<meta name="twitter:description" content="php/jquery/linux/thinkphp/cms">
   
   
     <link rel="icon" href="/css/images/favicon.png">
@@ -153,147 +151,41 @@
   
 </aside>
         
-        <section id="main"><article id="post-shell特性之通配符" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/25/shell特性之通配符/" class="article-date">
-  <time datetime="2016-05-25T07:12:58.000Z" itemprop="datePublished">2016-05-25</time>
+        <section id="main">
+  
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      <a href="/2017/09/16/jQuery之父-坚持每天都要写代码/" class="archive-article-date">
+  <time datetime="2017-09-16T15:58:50.000Z" itemprop="datePublished">9月 16</time>
 </a>
 
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/OS/">OS</a>►<a class="article-category-link" href="/categories/OS/shell/">shell</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+      
   
-    <h1 class="article-title" itemprop="name">
-      shell特性之通配符
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/09/16/jQuery之父-坚持每天都要写代码/">jQuery之父:坚持每天都要写代码</a>
     </h1>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>向想学 <code>linux shell</code> 的同学们推荐一本书 <a href="http://book.haoduoshipin.com/tlcl/" target="_blank" rel="external"><code>TLCL(The Linux Command Line)</code></a> 。</p>
-<p>正则可谓无处不在, <code>shell</code> 里面的文字处理大家应该都在计算机上接触过, 像 <code>?</code> 跟 <code>*</code> 这样的在计算机课上都有介绍。</p>
-<p>平常总会在系统内对文件进行一些批量操作, 光会这俩已经不足以解决问题了。所以适当深化技能还是很有必要的。下面是对shell字符匹配及其应用的一些总结。<br>来源大部分来自 <a href="http://book.haoduoshipin.com/tlcl/" target="_blank" rel="external"><code>TLCL</code></a> ,也有网上的一些摘录, 并都有实际操作。</p>
-<ul>
-<li>通配符</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>字符</th>
-<th>含义</th>
-<th>实例</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>*</code></td>
-<td>匹配0个或多个字符</td>
-<td><code>a*.txt</code> 匹配以 <code>a</code> 开头且格式后缀为 <code>.txt</code> 的所有文件</td>
-</tr>
-<tr>
-<td><code>？</code></td>
-<td>匹配任意一个字符（不包括零个）</td>
-<td><code>a?b</code> 可以匹配类似 <code>acb</code> 或者 <code>a2b</code></td>
-</tr>
-<tr>
-<td><code>[def]</code></td>
-<td>匹配 <code>def</code> 中的任意单一字符</td>
-<td><code>a[def]b</code> 可以匹配类似 <code>adb</code> , <code>aeb</code> , <code>afb</code></td>
-</tr>
-<tr>
-<td><code>[!def]</code> 或 <code>[^def]</code></td>
-<td>匹配除 <code>def</code> 外的任意单一字符</td>
-<td><code>a[!def]b</code> 或 <code>a[^def]b</code> 可以匹配不是 <code>adb</code> , <code>aeb</code> , <code>afb</code> 的所有 <code>a?b</code></td>
-</tr>
-<tr>
-<td><code>[str1-str2]</code></td>
-<td>匹配序列中的单一字符，如[0-9][a-z][A-Z]</td>
-<td><code>a[0-9]b</code> 可以匹配 <code>a0b</code> , <code>a1b</code> …… <code>a9b</code></td>
-</tr>
-<tr>
-<td><code>{str1, str2 ……}</code></td>
-<td>匹配 <code>str1</code> 或 <code>str2</code> (或更多)其一字符串</td>
-<td><code>a{de,dd,df}b</code> 可以匹配 <code>adeb</code> , <code>addb</code> , <code>adfb</code></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>常用的字符类</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>字符类</th>
-<th>意义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>[:alnum:]</code></td>
-<td>匹配任意一个字母或数字</td>
-</tr>
-<tr>
-<td><code>[:alpha:]</code></td>
-<td>匹配任意一个字母</td>
-</tr>
-<tr>
-<td><code>[:digit:]</code></td>
-<td>匹配任意一个数字</td>
-</tr>
-<tr>
-<td><code>[:lower:]</code></td>
-<td>匹配任意一个小写字母</td>
-</tr>
-<tr>
-<td><code>[:upper]</code></td>
-<td>匹配任意一个大写字母</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2016/05/25/shell特性之通配符/" data-id="cj7ni4c5q0010vkk3n0fgy01v" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shell/">shell</a></li></ul>
-
-    </footer>
+    </header>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/05/26/shell快捷键/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          shell快捷键
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/05/24/牛逼的技术分享博客/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">牛逼的技术分享博客</div>
-    </a>
-  
-</nav>
+</article>
 
   
-</article>
+  
+    </div></section>
+  
 
 </section>
       </div>
