@@ -1,1068 +1,936 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  <title>leeong&#39;s blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="php/jquery/linux/thinkphp/cms">
-<meta property="og:type" content="website">
-<meta property="og:title" content="leeong&#39;s blog">
-<meta property="og:url" content="http://www.leeong.cn/index.html">
-<meta property="og:site_name" content="leeong&#39;s blog">
-<meta property="og:description" content="php/jquery/linux/thinkphp/cms">
-<meta property="og:locale" content="zh-cn">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="leeong&#39;s blog">
-<meta name="twitter:description" content="php/jquery/linux/thinkphp/cms">
-  
-  
-    <link rel="icon" href="/css/images/favicon.png">
-  
-  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'> -->
-  <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css"> -->
-  <link rel="stylesheet" href="/css/style.css">
-  
+<html lang="en">
 
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="一个程序员的小屋, 原创&amp;分享编程知识  ↖(▔^▔)↗ Plus Ultra ↖(▔^▔)↗">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Leeong | blog
+        
+    </title>
+
+    <link rel="canonical" href="http://www.leeong.cn/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="header-outer" class="outer">
-    <a href="/" class="logo">leeong&#39;s blog</a>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
         
-          <a class="main-nav-link" href="/">Home</a>
+            background-image: url('/img/header_img/home-bg-2-dark.png') 
+            /*config*/
         
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-          <a class="main-nav-link" href="/aboutme">About</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        <div id="search-form-wrap">
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://www.leeong.cn"></form>
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="site-heading">
+                        <h1>leeong&#39;s blog</h1>
+                        <!--<hr class="small">-->
+                        <span class="subheading">冻死迎风站 饿死不说么吃饭</span>
+                    </div>
+                
+
+
+                </div>
+            </div>
         </div>
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-        
-        
-          <a id="nav-github-link" class="nav-icon" href="https://github.com/leeong" title="Fork me on GitHub"></a>
-        
-      </nav>
     </div>
-  </div>
 </header>
 
-      <nav id="mobile-nav" class="off">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/aboutme" class="mobile-nav-link">About</a>
-  
-  <div id="search-form-wrap-mobile">
-    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://www.leeong.cn"></form>
-  </div>
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">leeong&#39;s blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
 </nav>
-      <div class="outer">
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
         
-          <aside id="sidebar">
-  
+
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+            
+                <!-- Main Content -->
+
+
+<div class="post-preview">
+
+    <a href="/2018/06/25/升级到mysql8-0使用中遇到的问题汇总/">
+        <h2 class="post-title">
+            升级到MySQL8.0使用中遇到的问题汇总
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            Every thing is new新装的主机当然什么都要用最新的, Ubuntu18.08, php7.2, MySQL8.0MySQL8.0性能较5.x的版本还是有很大提升的，尤其是NoSQL的支持也值得一试本文记录的就是这个MySQL8.0踩的坑
+默认安装1sudo apt-get install mysql-client mysql-server
+这个默认安装的版本在当前是5.7而5......
+        </div>
+    </a>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DB/">DB</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DB/MySQL/">MySQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DB/Redis/">Redis</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OOP/">OOP</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OS/">OS</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OS/shell/">shell</a><span class="category-list-count">8</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/Extends/">Extends</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/Others/">Others</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/xdebug/">xdebug</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tool/">Tool</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/excerpt/">excerpt</a><span class="category-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-  
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2018-06-25
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#MySQL" title="MySQL">MySQL</a>
+            
+        </div>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">11</span></li></ul>
-    </div>
-  </div>
 
-  
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/03/26/安装java环境遇到的问题/">
+        <h2 class="post-title">
+            安装java环境遇到的问题
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            今天在Mac OS使用ActiveMQ Apollo的时候，才发现没装JDK。中间还出了点小波折，brew直接安装不了。百度，stackoverflow最终解决，这里记录一下。
+参考Amazing Code!;12345brew cask search java   #查询javabrew cask info java     #查询版本brew cask install java  #安装......
+        </div>
+    </a>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recents</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/03/26/安装java环境遇到的问题/">安装java环境遇到的问题</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/18/CGI、FastCGI和PHP-FPM关系图解/">CGI、FastCGI和PHP-FPM关系图解</a>
-          </li>
-        
-          <li>
-            <a href="/2017/09/16/jQuery之父-坚持每天都要写代码/">jQuery之父:坚持每天都要写代码</a>
-          </li>
-        
-          <li>
-            <a href="/2017/09/16/HTML特殊字符编码对照表/">HTML特殊字符编码对照表</a>
-          </li>
-        
-          <li>
-            <a href="/2017/09/16/RBAC-基于角色的访问控制/">RBAC-基于角色的访问控制</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2018-03-26
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#问题" title="问题">问题</a>
+            
+        </div>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/Javascript/" style="font-size: 13.33px;">Javascript</a> <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/OOP/" style="font-size: 13.33px;">OOP</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Redis/" style="font-size: 10px;">Redis</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/extend/" style="font-size: 10px;">extend</a> <a href="/tags/shell/" style="font-size: 20px;">shell</a> <a href="/tags/xdebug/" style="font-size: 10px;">xdebug</a> <a href="/tags/其它/" style="font-size: 16.67px;">其它</a> <a href="/tags/分享/" style="font-size: 13.33px;">分享</a> <a href="/tags/备份/" style="font-size: 10px;">备份</a> <a href="/tags/摘录/" style="font-size: 10px;">摘录</a> <a href="/tags/权限控制/" style="font-size: 10px;">权限控制</a> <a href="/tags/歌/" style="font-size: 10px;">歌</a> <a href="/tags/读书笔记/" style="font-size: 13.33px;">读书笔记</a> <a href="/tags/问题/" style="font-size: 10px;">问题</a>
-    </div>
-  </div>
 
-  
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/03/18/CGI、FastCGI和PHP-FPM关系图解/">
+        <h2 class="post-title">
+            CGI、FastCGI和PHP-FPM关系图解
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            摘自CGI、FastCGI和PHP-FPM关系图解...
+        </div>
+    </a>
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">links</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="https://github.com/leeong">github</a>
-          </li>
-        
-          <li>
-            <a href="http://www.leeong.cn">leeong</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-        <section id="main">
-  
-    <article id="post-安装java环境遇到的问题" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/26/安装java环境遇到的问题/" class="article-date">
-  <time datetime="2018-03-26T12:13:56.000Z" itemprop="datePublished">2018-03-26</time>
-</a>
-
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2018-03-18
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#分享" title="分享">分享</a>
+            
+        </div>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Tool/">Tool</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/09/16/jQuery之父-坚持每天都要写代码/">
+        <h2 class="post-title">
+            jQuery之父:坚持每天都要写代码
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            关于作者：John Resig， jQuery之父，同时也是Pro Javascript Techniques和Secrets of the JavaScript Ninja的作者。他目前主持 Khan Academy 的开发工作。
+去年秋天我的支线代码项目遇到了一些问题，项目进展不足，而且我没法找到一个完成更多代码的方法（在不影响我在Khan Academy方面的工作的前提下）。
+我主要在......
+        </div>
+    </a>
     
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2017-09-16
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#摘录" title="摘录">摘录</a>
+            
+        </div>
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/26/安装java环境遇到的问题/">安装java环境遇到的问题</a>
-    </h1>
-  
 
-      </header>
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/09/16/HTML特殊字符编码对照表/">
+        <h2 class="post-title">
+            HTML特殊字符编码对照表
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            
+
+
+特殊符号
+命名实体
+特殊符号
+命名实体
+特殊符号
+命名实体
+
+
+
+
+“
+&amp;quot;
+&amp;
+&amp;amp;
+‘
+&amp;#039;
+
+
+&lt;
+&amp;lt;
+&gt;
+&amp;gt;
+
+&amp;nbsp;
+
+
+¡
+&amp;iexcl;
+¢
+&amp;cent;
+£
+&amp;pound;
+
+
+¤
+&amp;curren;
+¥
+&amp;yen;
+¦
+&a......
+        </div>
+    </a>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天在<code>Mac OS</code>使用<code>ActiveMQ Apollo</code>的时候，才发现没装<code>JDK</code>。<br>中间还出了点小波折，<code>brew</code>直接安装不了。百度，<a href="https://stackoverflow.com/" target="_blank" rel="external"><code>stackoverflow</code></a>最终解决，这里记录一下。</p>
-<p>参考<a href="https://www.cnblogs.com/lidyan/p/6973492.html" target="_blank" rel="external">Amazing Code!</a>;<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">brew cask search java   #查询java</div><div class="line">brew cask info java     #查询版本</div><div class="line">brew cask install java  #安装</div><div class="line">java -version           #查看版本 检验安装成功与否</div></pre></td></tr></table></figure></p>
-<p>默认安装的最新版本，如果需要安装其他版本，比如<code>java7</code>，需要一下命令<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">brew tap caskroom/versions</div><div class="line">brew cask install java7</div></pre></td></tr></table></figure></p>
-<p>安装结束后跑<code>Apollo</code>命令时遇到以下报错<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span>../bin/apollo create mybroker</div><div class="line">Error: JAVA_HOME is not defined correctly.</div><div class="line">  We cannot execute /System/Library/Frameworks/JavaVM.framework/Home/bin/java</div></pre></td></tr></table></figure></p>
-<p>是因为环境变量的原因，需要将<code>java</code>路径添加到<code>.bash_profile</code>文件中<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export JAVA_HOME=$(/usr/libexec/java_home)</div><div class="line">export PATH=$JAVA_HOME/jre/bin:$PATH</div></pre></td></tr></table></figure></p>
-<p>至此，完美结束。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2018/03/26/安装java环境遇到的问题/" data-id="cjf87e24n001kzrk3ho23rccc" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/问题/">问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-CGI、FastCGI和PHP-FPM关系图解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/18/CGI、FastCGI和PHP-FPM关系图解/" class="article-date">
-  <time datetime="2018-03-18T12:31:27.000Z" itemprop="datePublished">2018-03-18</time>
-</a>
-
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2017-09-16
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#HTML" title="HTML">HTML</a>
+            
+        </div>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Others/">Others</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/09/16/RBAC-基于角色的访问控制/">
+        <h2 class="post-title">
+            RBAC-基于角色的访问控制
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            RBAC(以角色为基础的访问控制: Role-based access control)资讯安全领域中，一种广为使用的访问控制机制，其不同于强制访问控制以及自由选定访问控制直接赋予使用者权限，而是将权限赋予角色。以角色为基础的访问控制模型是一套较强制访问控制以及自由选定访问控制更为中性且更具灵活性的访问控制技术。
+定义在一个组织中，会因为不同的作业功能产生不同的角色，执行某项操作的权限会被赋......
+        </div>
+    </a>
     
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2017-09-16
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#权限控制" title="权限控制">权限控制</a>
+            
+        </div>
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/18/CGI、FastCGI和PHP-FPM关系图解/">CGI、FastCGI和PHP-FPM关系图解</a>
-    </h1>
-  
 
-      </header>
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2016/10/21/phpexcel扩展手册/">
+        <h2 class="post-title">
+            phpexcel扩展手册
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            最新更新旧版本的phpexcel已经近五年没有更新了但是有了替代方案 PHPOffice/PhpSpreadsheet这里记录下, 有时间可以再更新一版手册
+PHPEXCEL扩展日常开发中, 会有很多表格处理，这个时候就需要用到phpexcel扩展下面是使用手册，记录一下，以便不时之需
+12345678910111213141516171819202122232425262728293031......
+        </div>
+    </a>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="摘自CGI、FastCGI和PHP-FPM关系图解"><a href="#摘自CGI、FastCGI和PHP-FPM关系图解" class="headerlink" title="摘自CGI、FastCGI和PHP-FPM关系图解"></a>摘自<a href="https://www.awaimai.com/371.html" target="_blank" rel="external">CGI、FastCGI和PHP-FPM关系图解</a></h3>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2018/03/18/CGI、FastCGI和PHP-FPM关系图解/" data-id="cjf87e23h0000zrk3ap2vjy2i" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分享/">分享</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-jQuery之父-坚持每天都要写代码" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/09/16/jQuery之父-坚持每天都要写代码/" class="article-date">
-  <time datetime="2017-09-16T15:58:50.000Z" itemprop="datePublished">2017-09-16</time>
-</a>
-
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2016-10-21
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#PHP" title="PHP">PHP</a>
+            
+              <a href="/tags/#extend" title="extend">extend</a>
+            
+              <a href="/tags/#excel" title="excel">excel</a>
+            
+        </div>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/excerpt/">excerpt</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2016/10/11/PHP下载CSV表格代码模板/">
+        <h2 class="post-title">
+            PHP下载CSV表格代码模板
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            前段时间写了一篇PHP导出CSV文件的编码BUG;文章中下载的文件是优先缓存的。下面再记录一份不需要缓存的版本，可以当作导出CSV模板使用。1234567891011&lt;?php$fileName = 'filename' . time() . '.csv';header('Content-Type: application/csv;charset=utf8');header("Cont......
+        </div>
+    </a>
     
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2016-10-11
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#其它" title="其它">其它</a>
+            
+        </div>
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/16/jQuery之父-坚持每天都要写代码/">jQuery之父:坚持每天都要写代码</a>
-    </h1>
-  
 
-      </header>
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2016/09/12/面向对象的三个基本特征和五种设计原则/">
+        <h2 class="post-title">
+            面向对象的三个基本特征和五种设计原则
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            三个基本特征封装 继承 多态
+
+封装
+
+封装最好理解了。封装是面向对象的特征之一，是对象和类概念的主要特性。封装，也就是把客观事物封装成抽象的类，并且类可以把自己的数据和方法只让可信的类或者对象操作，对不可信的进行信息隐藏。
+
+继承
+
+面向对象编程 (OOP)语言的一个主要功能就是“继承”。继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来的类的情况下对这些功能进行扩展。......
+        </div>
+    </a>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>关于作者：John Resig， jQuery之父，同时也是Pro Javascript Techniques和Secrets of the JavaScript Ninja的作者。他目前主持 Khan Academy 的开发工作。</p>
-<p>去年秋天我的支线代码项目遇到了一些问题，项目进展不足，而且我没法找到一个完成更多代码的方法（在不影响我在Khan Academy方面的工作的前提下）。</p>
-<p>我主要在周末进行我的支线，当然有时候也在晚上进行。这个方法对我而言效果不佳。我的压力太重了，我需要在周末努力完成尽可能多的工作（如果没做 到，我会为此感到挫败）。还有一个问题是我无法保证每个周末都有空，而且我也不想把周末所有的时间都花在编程上（失去一切放松娱乐的机会）。</p>
-<p>此外，每隔一周进行编码的话，间隙太长了。太容易忘记你正在做什么，或者你还需要做什么了（即使你有笔记）。如果你错过了一个周末的话，问题就更严重了，间隔一下子变成两周了。多周的上下文切换可能是致命的（我有很多支线项目因为这类注意力缺乏而死亡了）。</p>
-<p>Jennifer Dewalt 去年通过在 180 天创建 180 个网站的方式来自学编程，她的做法启发了我。我决定采用一个简单的策略：每天编码。</p>
-<p>我决定为自己定下一些规则：</p>
-<ol>
-<li>每天必须写代码。我可以写文档、写博客或者写其他东西，但是这些不能代替写代码。</li>
-<li>代码必须是实际起作用的。调整缩进、重新排版不算。如果有可能，重构也不算。（可以进行这些事情，但这些不能是一天唯一的编码。）</li>
-<li>所有代码必须在午夜之前完成。</li>
-<li>代码必须是开源的，放在Github上。</li>
-</ol>
-<p>有些规则比较武断。比如代码其实不用在午夜前写完的。但我担心熬夜导致代码质量下降。同样，代码也不用开源，或者放在GitHub上。我这么做是想强迫自己写代码的时候上点心（考虑可读性，同时较早地考虑模块化）</p>
-<p>到目前为止这个策略很有效。我基本保持了20周的连续工作。我之所以写这篇博客，正是因为它完全改变了我编写代码的方式，更重要的是影响了我生活和心智。</p>
-<p>这个习惯的改变产生了一些有趣的结果：</p>
-<p><strong>最小可行的编码。</strong> 我强迫自己每天花不少于半个小时来写代码（如果少于这个时间就很难写出有价值的代码了，特别是回忆前一天写了什么还要花一点时间）。工作日的时候我有时写得多一点（一般不超过一个小时），周末我有时整天写代码。</p>
-<p><strong>写代码成为习惯。</strong> 值得一提的是我并不是特别在乎上面的Github图形。我觉得这是这个实验最值得借鉴的一点：这是你为自己做的一个改变，而不是为了满足别人对你工作的评价。节食和锻炼也是一个道理：如果你不在乎提升自己，那么你永远都不会取得成功。</p>
-<p><strong>与焦虑作斗争。</strong> 在开始这个实验之前，我时常为没有完成足够的工作或取得足够进展而感到焦虑（工作和进展都难以量化，因为我的支线项目没有死限）。我意识到，感觉到进展和 实际推进工作同样重要。这令我大开眼界。一旦我每天持续地推进项目，我的焦虑就开始消散了。我对自己的工作量很心安，我再也没有那种难以承受的渴望，想要疾风骤雨式地推进项目的渴望。</p>
-<p><strong>周末。</strong> 以前，在周末完成工作绝对是前进的关键动力（因为通常而言这是我唯一大量推进支线项目工作的机会。）现在情况不一样了——这是件好事。期望在一个周末完成 一周的所有工作只会让我失望。我极少很完成工作，因此为了完成更多工作而拒绝了其他喜欢的周末活动（例如吃 dim sum，参观博物馆，去公园游玩，陪伴我的伴侣等）。我深深地感到，虽然支线项目是非常重要的，但是它们不应该是生活的全部。</p>
-<p><strong>后台处理。</strong> 每天编写支线项目代码的一个有趣的副作用是你当前的任务时常在你大脑的后台运行。因此当我去散步或沐浴的时候，或者进行其他不费脑的活动的时候，我在思考 我接下来将做哪些编码，寻找解决问题的好方法。我以前一周或两周编码一次的时候可不是这样。当时时间被花费在思考其他一些事情上，通常是在为没法完成任何 支线项目而感到焦虑。</p>
-<p><strong>上下文切换。</strong> 拾起支线项目工作的时候总会有上下文开销的。很不幸，重拾整整一周前的思考是极其困难的。每天做一点对此很有帮助，因为间隔时间大大缩短了，让我很容易想起在做什么。</p>
-<p><strong>平衡工作。</strong> 这个改变最重要的方面之一是我已经简单地学会了如何更好地平衡工作、生活和支线项目。我知道自己每天都要做支线项目，因此我需要更好地管理时间。如果我计 划晚上出去，并且很晚才能回家，那么我需要在早上为支线项目工作，在开始为我主业Khan Academy工作之前。同样的，如果我在外面，而我还没有完成我的工作，时间已经很晚了，那么我需要尽快赶回家去完成工作（以免错过一天）。我需要指出 的是我发现自己把更少的时间花在爱好上了（例如木版画），但是这是一个合理的代价，我得接受这个。</p>
-<p><strong>对外沟通。</strong> 跟外界沟通自己的新习惯是很有好处的。我的伴侣理解每都必须完成工作，因此有活动安排有时需要据此作出调整。这样我就可以很方便地说：“是的，我们可以出去/看个电影/等等。但是我之后需要写代码。”我的伴侣会理解我，并在安排活动时考虑到这点。</p>
-<p><strong>我写了多少代码？</strong> 我很难相信自己在过去的几个月写了这么多的代码。我新建了几个网站，重写了一些框架，并创建了大量node模块。我写了如此之多的代码以至于我有时我都忘记自己做了写什么——几周前的工作感觉是很久远的记忆。我非常非常高兴自己能写这么多代码。</p>
-<p>我认为这个习惯的改变是一个巨大的成功。我希望自己能持续保持这个习惯。同时，我尽力向其他希望能完成大量的支线项目的人推荐这个策略。告诉我这个策略对你而言是有效还是无效。我很希望能从你那里听到一些有意思的东西。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2017/09/16/jQuery之父-坚持每天都要写代码/" data-id="cjf87e243000mzrk3gw0qez98" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/摘录/">摘录</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-HTML特殊字符编码对照表" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/09/16/HTML特殊字符编码对照表/" class="article-date">
-  <time datetime="2017-09-16T11:20:39.000Z" itemprop="datePublished">2017-09-16</time>
-</a>
-
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2016-09-12
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#OOP" title="OOP">OOP</a>
+            
+        </div>
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/HTML/">HTML</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2016/08/04/PHP导出CSV文件的编码BUG/">
+        <h2 class="post-title">
+            PHP导出CSV文件的编码BUG
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            
+BUG描述： 今天使用PHP导出CSV文件发现在windows下使用Office excel打开的时候乱码，而用WPS打开却是正常的。
+
+原因： 百度了下才知道，是因为创建的文件没有BOM，而Windows就是使用BOM来标记文本文件的编码方式的。需要做的就是在文件的开头加上EF BB BF的字符来告诉系统是UTF-8的文件。下面上代码：
+
+
+12345678910111213141516......
+        </div>
+    </a>
     
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by leeong on
+            2016-08-04
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#其它" title="其它">其它</a>
+            
+        </div>
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/16/HTML特殊字符编码对照表/">HTML特殊字符编码对照表</a>
-    </h1>
-  
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <table>
-<thead>
-<tr>
-<th>特殊符号</th>
-<th>命名实体</th>
-<th>特殊符号</th>
-<th>命名实体</th>
-<th>特殊符号</th>
-<th>命名实体</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>“</td>
-<td><code>&amp;quot;</code></td>
-<td>&amp;</td>
-<td><code>&amp;amp;</code></td>
-<td>‘</td>
-<td><code>&amp;#039;</code></td>
-</tr>
-<tr>
-<td>&lt;</td>
-<td><code>&amp;lt;</code></td>
-<td>&gt;</td>
-<td><code>&amp;gt;</code></td>
-<td></td>
-<td><code>&amp;nbsp;</code></td>
-</tr>
-<tr>
-<td>¡</td>
-<td><code>&amp;iexcl;</code></td>
-<td>¢</td>
-<td><code>&amp;cent;</code></td>
-<td>£</td>
-<td><code>&amp;pound;</code></td>
-</tr>
-<tr>
-<td>¤</td>
-<td><code>&amp;curren;</code></td>
-<td>¥</td>
-<td><code>&amp;yen;</code></td>
-<td>¦</td>
-<td><code>&amp;brvbar;</code></td>
-</tr>
-<tr>
-<td>§</td>
-<td><code>&amp;sect;</code></td>
-<td>¨</td>
-<td><code>&amp;uml;</code></td>
-<td>©</td>
-<td><code>&amp;copy;</code></td>
-</tr>
-<tr>
-<td>ª</td>
-<td><code>&amp;ordf;</code></td>
-<td>«</td>
-<td><code>&amp;laquo;</code></td>
-<td>¬</td>
-<td><code>&amp;not;</code></td>
-</tr>
-<tr>
-<td>-­</td>
-<td><code>&amp;shy;</code></td>
-<td>®</td>
-<td><code>&amp;reg;</code></td>
-<td>¯</td>
-<td><code>&amp;macr;</code></td>
-</tr>
-<tr>
-<td>°</td>
-<td><code>&amp;deg;</code></td>
-<td>±</td>
-<td><code>&amp;plusmn;</code></td>
-<td>²</td>
-<td><code>&amp;sup2;</code></td>
-</tr>
-<tr>
-<td>³</td>
-<td><code>&amp;sup3;</code></td>
-<td>´</td>
-<td><code>&amp;acute;</code></td>
-<td>µ</td>
-<td><code>&amp;micro;</code></td>
-</tr>
-<tr>
-<td>¶</td>
-<td><code>&amp;para;</code></td>
-<td>·</td>
-<td><code>&amp;middot;</code></td>
-<td>¸</td>
-<td><code>&amp;cedil;</code></td>
-</tr>
-<tr>
-<td>¹</td>
-<td><code>&amp;sup1;</code></td>
-<td>º</td>
-<td><code>&amp;ordm;</code></td>
-<td>»</td>
-<td><code>&amp;raquo;</code></td>
-</tr>
-<tr>
-<td>¼</td>
-<td><code>&amp;frac14;</code></td>
-<td>½</td>
-<td><code>&amp;frac12;</code></td>
-<td>¾</td>
-<td><code>&amp;frac34;</code></td>
-</tr>
-<tr>
-<td>¿</td>
-<td><code>&amp;iquest;</code></td>
-<td>À</td>
-<td><code>&amp;Agrave;</code></td>
-<td>Á</td>
-<td><code>&amp;Aacute;</code></td>
-</tr>
-<tr>
-<td>Â</td>
-<td><code>&amp;Acirc;</code></td>
-<td>Ã</td>
-<td><code>&amp;Atilde;</code></td>
-<td>Ä</td>
-<td><code>&amp;Auml;</code></td>
-</tr>
-<tr>
-<td>Å</td>
-<td><code>&amp;Aring;</code></td>
-<td>Æ</td>
-<td><code>&amp;AElig;</code></td>
-<td>Ç</td>
-<td><code>&amp;Ccedil;</code></td>
-</tr>
-<tr>
-<td>È</td>
-<td><code>&amp;Egrave;</code></td>
-<td>É</td>
-<td><code>&amp;Eacute;</code></td>
-<td>Ê</td>
-<td><code>&amp;Ecirc;</code></td>
-</tr>
-<tr>
-<td>Ë</td>
-<td><code>&amp;Euml;</code></td>
-<td>Ì</td>
-<td><code>&amp;Igrave;</code></td>
-<td>Í</td>
-<td><code>&amp;Iacute;</code></td>
-</tr>
-<tr>
-<td>Î</td>
-<td><code>&amp;Icirc;</code></td>
-<td>Ï</td>
-<td><code>&amp;Iuml;</code></td>
-<td>Ð</td>
-<td><code>&amp;ETH;</code></td>
-</tr>
-<tr>
-<td>Ñ</td>
-<td><code>&amp;Ntilde;</code></td>
-<td>Ò</td>
-<td><code>&amp;Ograve;</code></td>
-<td>Ó</td>
-<td><code>&amp;Oacute;</code></td>
-</tr>
-<tr>
-<td>Ô</td>
-<td><code>&amp;Ocirc;</code></td>
-<td>Õ</td>
-<td><code>&amp;Otilde;</code></td>
-<td>Ö</td>
-<td><code>&amp;Ouml;</code></td>
-</tr>
-<tr>
-<td>×</td>
-<td><code>&amp;times;</code></td>
-<td>Ø</td>
-<td><code>&amp;Oslash;</code></td>
-<td>Ù</td>
-<td><code>&amp;Ugrave;</code></td>
-</tr>
-<tr>
-<td>Ú</td>
-<td><code>&amp;Uacute;</code></td>
-<td>Û</td>
-<td><code>&amp;Ucirc;</code></td>
-<td>Ü</td>
-<td><code>&amp;Uuml;</code></td>
-</tr>
-<tr>
-<td>Ý</td>
-<td><code>&amp;Yacute;</code></td>
-<td>Þ</td>
-<td><code>&amp;THORN;</code></td>
-<td>ß</td>
-<td><code>&amp;szlig;</code></td>
-</tr>
-<tr>
-<td>à</td>
-<td><code>&amp;agrave;</code></td>
-<td>á</td>
-<td><code>&amp;aacute;</code></td>
-<td>â</td>
-<td><code>&amp;acirc;</code></td>
-</tr>
-<tr>
-<td>ã</td>
-<td><code>&amp;atilde;</code></td>
-<td>ä</td>
-<td><code>&amp;auml;</code></td>
-<td>å</td>
-<td><code>&amp;aring;</code></td>
-</tr>
-<tr>
-<td>æ</td>
-<td><code>&amp;aelig;</code></td>
-<td>ç</td>
-<td><code>&amp;ccedil;</code></td>
-<td>è</td>
-<td><code>&amp;egrave;</code></td>
-</tr>
-<tr>
-<td>é</td>
-<td><code>&amp;eacute;</code></td>
-<td>ê</td>
-<td><code>&amp;ecirc;</code></td>
-<td>ë</td>
-<td><code>&amp;euml;</code></td>
-</tr>
-<tr>
-<td>ì</td>
-<td><code>&amp;igrave;</code></td>
-<td>í</td>
-<td><code>&amp;iacute;</code></td>
-<td>î</td>
-<td><code>&amp;icirc;</code></td>
-</tr>
-<tr>
-<td>ï</td>
-<td><code>&amp;iuml;</code></td>
-<td>ð</td>
-<td><code>&amp;eth;</code></td>
-<td>ñ</td>
-<td><code>&amp;ntilde;</code></td>
-</tr>
-<tr>
-<td>ò</td>
-<td><code>&amp;ograve;</code></td>
-<td>ó</td>
-<td><code>&amp;oacute;</code></td>
-<td>ô</td>
-<td><code>&amp;ocirc;</code></td>
-</tr>
-<tr>
-<td>õ</td>
-<td><code>&amp;otilde;</code></td>
-<td>ö</td>
-<td><code>&amp;ouml;</code></td>
-<td>÷</td>
-<td><code>&amp;divide;</code></td>
-</tr>
-<tr>
-<td>ø</td>
-<td><code>&amp;oslash;</code></td>
-<td>ù</td>
-<td><code>&amp;ugrave;</code></td>
-<td>ú</td>
-<td><code>&amp;uacute;</code></td>
-</tr>
-<tr>
-<td>û</td>
-<td><code>&amp;ucirc;</code></td>
-<td>ü</td>
-<td><code>&amp;uuml;</code></td>
-<td>ý</td>
-<td><code>&amp;yacute;</code></td>
-</tr>
-<tr>
-<td>þ</td>
-<td><code>&amp;thorn;</code></td>
-<td>ÿ</td>
-<td><code>&amp;yuml;</code></td>
-<td>Α</td>
-<td><code>&amp;Alpha;</code></td>
-</tr>
-<tr>
-<td>Β</td>
-<td><code>&amp;Beta;</code></td>
-<td>Γ</td>
-<td><code>&amp;Gamma;</code></td>
-<td>Δ</td>
-<td><code>&amp;Delta;</code></td>
-</tr>
-<tr>
-<td>Ε</td>
-<td><code>&amp;Epsilon;</code></td>
-<td>Ζ</td>
-<td><code>&amp;Zeta;</code></td>
-<td>Η</td>
-<td><code>&amp;Eta;</code></td>
-</tr>
-<tr>
-<td>Θ</td>
-<td><code>&amp;Theta;</code></td>
-<td>Ι</td>
-<td><code>&amp;Iota;</code></td>
-<td>Κ</td>
-<td><code>&amp;Kappa;</code></td>
-</tr>
-<tr>
-<td>Λ</td>
-<td><code>&amp;Lambda;</code></td>
-<td>Μ</td>
-<td><code>&amp;Mu;</code></td>
-<td>Ν</td>
-<td><code>&amp;Nu;</code></td>
-</tr>
-<tr>
-<td>Ξ</td>
-<td><code>&amp;Xi;</code></td>
-<td>Ο</td>
-<td><code>&amp;Omicron;</code></td>
-<td>Π</td>
-<td><code>&amp;Pi;</code></td>
-</tr>
-<tr>
-<td>Ρ</td>
-<td><code>&amp;Rho;</code></td>
-<td>Σ</td>
-<td><code>&amp;Sigma;</code></td>
-<td>Τ</td>
-<td><code>&amp;Tau;</code></td>
-</tr>
-<tr>
-<td>Υ</td>
-<td><code>&amp;Upsilon;</code></td>
-<td>Φ</td>
-<td><code>&amp;Phi;</code></td>
-<td>Χ</td>
-<td><code>&amp;Chi;</code></td>
-</tr>
-<tr>
-<td>Ψ</td>
-<td><code>&amp;Psi;</code></td>
-<td>Ω</td>
-<td><code>&amp;Omega;</code></td>
-<td>α</td>
-<td><code>&amp;alpha;</code></td>
-</tr>
-<tr>
-<td>β</td>
-<td><code>&amp;beta;</code></td>
-<td>γ</td>
-<td><code>&amp;gamma;</code></td>
-<td>δ</td>
-<td><code>&amp;delta;</code></td>
-</tr>
-<tr>
-<td>ε</td>
-<td><code>&amp;epsilon;</code></td>
-<td>ζ</td>
-<td><code>&amp;zeta;</code></td>
-<td>η</td>
-<td><code>&amp;eta;</code></td>
-</tr>
-<tr>
-<td>θ</td>
-<td><code>&amp;theta;</code></td>
-<td>ι</td>
-<td><code>&amp;iota;</code></td>
-<td>κ</td>
-<td><code>&amp;kappa;</code></td>
-</tr>
-<tr>
-<td>λ</td>
-<td><code>&amp;lambda;</code></td>
-<td>μ</td>
-<td><code>&amp;mu;</code></td>
-<td>ν</td>
-<td><code>&amp;nu;</code></td>
-</tr>
-<tr>
-<td>ξ</td>
-<td><code>&amp;xi;</code></td>
-<td>ο</td>
-<td><code>&amp;omicron;</code></td>
-<td>π</td>
-<td><code>&amp;pi;</code></td>
-</tr>
-<tr>
-<td>ρ</td>
-<td><code>&amp;rho;</code></td>
-<td>ς</td>
-<td><code>&amp;sigmaf;</code></td>
-<td>σ</td>
-<td><code>&amp;sigma;</code></td>
-</tr>
-<tr>
-<td>τ</td>
-<td><code>&amp;tau;</code></td>
-<td>υ</td>
-<td><code>&amp;upsilon;</code></td>
-<td>φ</td>
-<td><code>&amp;phi;</code></td>
-</tr>
-<tr>
-<td>χ</td>
-<td><code>&amp;chi;</code></td>
-<td>ψ</td>
-<td><code>&amp;psi;</code></td>
-<td>ω</td>
-<td><code>&amp;omega;</code></td>
-</tr>
-<tr>
-<td>ϑ</td>
-<td><code>&amp;thetasym;</code></td>
-<td>ϒ</td>
-<td><code>&amp;upsih;</code></td>
-<td>ϖ</td>
-<td><code>&amp;piv;</code></td>
-</tr>
-<tr>
-<td>•</td>
-<td><code>&amp;bull;</code></td>
-<td>…</td>
-<td><code>&amp;hellip;</code></td>
-<td>′</td>
-<td><code>&amp;prime;</code></td>
-</tr>
-<tr>
-<td>″</td>
-<td><code>&amp;Prime;</code></td>
-<td>‾</td>
-<td><code>&amp;oline;</code></td>
-<td>⁄</td>
-<td><code>&amp;frasl;</code></td>
-</tr>
-<tr>
-<td>℘</td>
-<td><code>&amp;weierp;</code></td>
-<td>ℑ</td>
-<td><code>&amp;image;</code></td>
-<td>ℜ</td>
-<td><code>&amp;real;</code></td>
-</tr>
-<tr>
-<td>™</td>
-<td><code>&amp;trade;</code></td>
-<td>ℵ</td>
-<td><code>&amp;alefsym;</code></td>
-<td>←</td>
-<td><code>&amp;larr;</code></td>
-</tr>
-<tr>
-<td>↑</td>
-<td><code>&amp;uarr;</code></td>
-<td>→</td>
-<td><code>&amp;rarr;</code></td>
-<td>↓</td>
-<td><code>&amp;darr;</code></td>
-</tr>
-<tr>
-<td>↔</td>
-<td><code>&amp;harr;</code></td>
-<td>↵</td>
-<td><code>&amp;crarr;</code></td>
-<td>⇐</td>
-<td><code>&amp;lArr;</code></td>
-</tr>
-<tr>
-<td>⇑</td>
-<td><code>&amp;uArr;</code></td>
-<td>⇒</td>
-<td><code>&amp;rArr;</code></td>
-<td>⇓</td>
-<td><code>&amp;dArr;</code></td>
-</tr>
-<tr>
-<td>⇔</td>
-<td><code>&amp;hArr;</code></td>
-<td>∀</td>
-<td><code>&amp;forall;</code></td>
-<td>∂</td>
-<td><code>&amp;part;</code></td>
-</tr>
-<tr>
-<td>∃</td>
-<td><code>&amp;exist;</code></td>
-<td>∅</td>
-<td><code>&amp;empty;</code></td>
-<td>∇</td>
-<td><code>&amp;nabla;</code></td>
-</tr>
-<tr>
-<td>∈</td>
-<td><code>&amp;isin;</code></td>
-<td>∉</td>
-<td><code>&amp;notin;</code></td>
-<td>∋</td>
-<td><code>&amp;ni;</code></td>
-</tr>
-<tr>
-<td>∏</td>
-<td><code>&amp;prod;</code></td>
-<td>∑</td>
-<td><code>&amp;sum;</code></td>
-<td>−</td>
-<td><code>&amp;minus;</code></td>
-</tr>
-<tr>
-<td>∗</td>
-<td><code>&amp;lowast;</code></td>
-<td>√</td>
-<td><code>&amp;radic;</code></td>
-<td>∝</td>
-<td><code>&amp;prop;</code></td>
-</tr>
-<tr>
-<td>∞</td>
-<td><code>&amp;infin;</code></td>
-<td>∠</td>
-<td><code>&amp;ang;</code></td>
-<td>∧</td>
-<td><code>&amp;and;</code></td>
-</tr>
-<tr>
-<td>∨</td>
-<td><code>&amp;or;</code></td>
-<td>∩</td>
-<td><code>&amp;cap;</code></td>
-<td>∪</td>
-<td><code>&amp;cup;</code></td>
-</tr>
-<tr>
-<td>∫</td>
-<td><code>&amp;int;</code></td>
-<td>∴</td>
-<td><code>&amp;there4;</code></td>
-<td>∼</td>
-<td><code>&amp;sim;</code></td>
-</tr>
-<tr>
-<td>≅</td>
-<td><code>&amp;cong;</code></td>
-<td>≈</td>
-<td><code>&amp;asymp;</code></td>
-<td>≠</td>
-<td><code>&amp;ne;</code></td>
-</tr>
-<tr>
-<td>≡</td>
-<td><code>&amp;equiv;</code></td>
-<td>≤</td>
-<td><code>&amp;le;</code></td>
-<td>≥</td>
-<td><code>&amp;ge;</code></td>
-</tr>
-<tr>
-<td>⊂</td>
-<td><code>&amp;sub;</code></td>
-<td>⊃</td>
-<td><code>&amp;sup;</code></td>
-<td>⊄</td>
-<td><code>&amp;nsub;</code></td>
-</tr>
-<tr>
-<td>⊆</td>
-<td><code>&amp;sube;</code></td>
-<td>⊇</td>
-<td><code>&amp;supe;</code></td>
-<td>⊕</td>
-<td><code>&amp;oplus;</code></td>
-</tr>
-<tr>
-<td>⊗</td>
-<td><code>&amp;otimes;</code></td>
-<td>⊥</td>
-<td><code>&amp;perp;</code></td>
-<td>⋅</td>
-<td><code>&amp;sdot;</code></td>
-</tr>
-<tr>
-<td>⌈</td>
-<td><code>&amp;lceil;</code></td>
-<td>⌉</td>
-<td><code>&amp;rceil;</code></td>
-<td>⌊</td>
-<td><code>&amp;lfloor;</code></td>
-</tr>
-<tr>
-<td>⌋</td>
-<td><code>&amp;rfloor;</code></td>
-<td>◊</td>
-<td><code>&amp;loz;</code></td>
-<td>♠</td>
-<td><code>&amp;spades;</code></td>
-</tr>
-<tr>
-<td>♣</td>
-<td><code>&amp;clubs;</code></td>
-<td>♥</td>
-<td><code>&amp;hearts;</code></td>
-<td>♦</td>
-<td><code>&amp;diams;</code></td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2017/09/16/HTML特殊字符编码对照表/" data-id="cjf87e23m0001zrk3aikp6yvp" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
+</div>
+<hr>
 
 
-  
-    <article id="post-RBAC-基于角色的访问控制" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/09/16/RBAC-基于角色的访问控制/" class="article-date">
-  <time datetime="2017-09-16T09:11:52.000Z" itemprop="datePublished">2017-09-16</time>
-</a>
 
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Others/">Others</a>
-  </div>
+<!-- Pager -->
 
-  </div>
-  <div class="article-inner">
+<ul class="pager">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/16/RBAC-基于角色的访问控制/">RBAC-基于角色的访问控制</a>
-    </h1>
-  
-
-      </header>
+        <li class="next">
+            <a href="/archives/2/">Older Posts &rarr;</a>
+        </li>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="RBAC-以角色为基础的访问控制-Role-based-access-control"><a href="#RBAC-以角色为基础的访问控制-Role-based-access-control" class="headerlink" title="RBAC(以角色为基础的访问控制: Role-based access control)"></a>RBAC(以角色为基础的访问控制: Role-based access control)</h3><p>资讯安全领域中，一种广为使用的访问控制机制，其不同于强制访问控制以及自由选定访问控制直接赋予使用者权限，而是将权限赋予角色。<br>以角色为基础的访问控制模型是一套较强制访问控制以及自由选定访问控制更为中性且更具灵活性的访问控制技术。</p>
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>在一个组织中，会因为不同的作业功能产生不同的角色，执行某项操作的权限会被赋予特定的角色。组织成员或者工作人员（抑或其它系统用户）则被赋予不同的角色，这些用户通过被赋予角色来取得执行某项计算机系统功能的权限。</p>
-<ul>
-<li>S = 主体 = 一名使用者或自动代理人</li>
-<li>R = 角色 = 被定义为一个授权等级的工作职位或职称</li>
-<li>P = 权限 = 一种存取资源的方式</li>
-<li>SE = 会期 = S，R或P之间的映射关系</li>
-<li>SA = 主体指派</li>
-<li>PA = 权限指派</li>
-<li>RH = 角色阶层。能被表示为：≥（x ≥ y 代表 x 继承 y 的权限）</li>
-</ul>
-<p>RBAC具有以下特征</p>
-<ul>
-<li>一个主体可对应多个角色。</li>
-<li>一个角色可对应多个主体。</li>
-<li>一个角色可拥有多个权限。</li>
-<li>一种权限可被分配给许多个角色。</li>
-<li>一个角色可以有专属于自己的权限。</li>
-</ul>
-<p>所以，用集合论的符号：</p>
-<ul>
-<li><em>PA &sube; P x R</em>  是一个多对多的权限分配方式。</li>
-<li><em>SA &sube; S x R</em>  是一个多对多的主体指派方式。</li>
-<li><em>RH &sube; R x R</em></li>
 </ul>
 
-      
+
+
+                <!-- 如果开启评论功能 -->
+                
+            </div>
+
+          <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Featured Tags -->
+
+<section>
+    <!-- no hr -->
+    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+            
+            <a href="/tags/#分享" title="分享" rel="2">分享</a>
+            
+        
+            
+            <a href="/tags/#Javascript" title="Javascript" rel="2">Javascript</a>
+            
+        
+            
+            <a href="/tags/#读书笔记" title="读书笔记" rel="2">读书笔记</a>
+            
+        
+            
+            <a href="/tags/#HTML" title="HTML" rel="1">HTML</a>
+            
+        
+            
+            <a href="/tags/#MySQL" title="MySQL" rel="2">MySQL</a>
+            
+        
+            
+            <a href="/tags/#备份" title="备份" rel="1">备份</a>
+            
+        
+            
+            <a href="/tags/#其它" title="其它" rel="3">其它</a>
+            
+        
+            
+            <a href="/tags/#权限控制" title="权限控制" rel="1">权限控制</a>
+            
+        
+            
+            <a href="/tags/#shell" title="shell" rel="8">shell</a>
+            
+        
+            
+            <a href="/tags/#摘录" title="摘录" rel="1">摘录</a>
+            
+        
+            
+            <a href="/tags/#PHP" title="PHP" rel="1">PHP</a>
+            
+        
+            
+            <a href="/tags/#extend" title="extend" rel="1">extend</a>
+            
+        
+            
+            <a href="/tags/#excel" title="excel" rel="1">excel</a>
+            
+        
+            
+            <a href="/tags/#Redis" title="Redis" rel="1">Redis</a>
+            
+        
+            
+            <a href="/tags/#xdebug" title="xdebug" rel="1">xdebug</a>
+            
+        
+            
+            <a href="/tags/#OOP" title="OOP" rel="2">OOP</a>
+            
+        
+            
+            <a href="/tags/#歌" title="歌" rel="1">歌</a>
+            
+        
+            
+            <a href="/tags/#问题" title="问题" rel="1">问题</a>
+            
+        
+            
+        
     </div>
-    <footer class="article-footer">
-      <a data-url="http://www.leeong.cn/2017/09/16/RBAC-基于角色的访问控制/" data-id="cjf87e23z000hzrk3qmrlgs3n" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/权限控制/">权限控制</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
 </section>
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner right">
-      <a href="/" class="logo">leeong&#39;s blog</a>
-      &copy; 2018 leeong <br>
-      冻死迎风站 饿死不说么吃饭<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+
+        <hr>
+    
+        <!-- Short About -->
+<section class="visible-md visible-lg">
+    <h5><a href="/about/">ABOUT ME</a></h5>
+    <div class="short-about">
+
+        
+            <img id = "avatar_pic" src="/img/ironman-draw.png" />
+        
+
+        
+            <p>冻死迎风站 饿死不说么吃饭</p>
+        
+
+        <!-- SNS Link -->
+        <ul class="list-inline">
+            
+                <li>
+                    <a href="/feed.xml">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            
+            
+
+            
+
+            
+
+            
+                <li>
+                    <a target="_blank"  href="https://github.com/leeong">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            
+            
+            
+            
+        </ul>
     </div>
-    <div id="footer-star"></div>
+</section>
+        <hr>
+    
+        
+  <h5>RECENT POSTS</h3>
+  <div class="widget">
+    <ul>
+      
+        <li>
+          <a href="/2018/06/25/升级到mysql8-0使用中遇到的问题汇总/">升级到MySQL8.0使用中遇到的问题汇总</a>
+        </li>
+      
+        <li>
+          <a href="/2018/03/26/安装java环境遇到的问题/">安装java环境遇到的问题</a>
+        </li>
+      
+        <li>
+          <a href="/2018/03/18/CGI、FastCGI和PHP-FPM关系图解/">CGI、FastCGI和PHP-FPM关系图解</a>
+        </li>
+      
+        <li>
+          <a href="/2017/09/16/jQuery之父-坚持每天都要写代码/">jQuery之父:坚持每天都要写代码</a>
+        </li>
+      
+        <li>
+          <a href="/2017/09/16/HTML特殊字符编码对照表/">HTML特殊字符编码对照表</a>
+        </li>
+      
+    </ul>
   </div>
+
+        <hr>
+    
+        
+    <h5>ARCHIVES</h5>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">九月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">八月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">11</span></li></ul>
+    </div>
+
+        <hr>
+    
+        <!-- Categories -->
+
+    <h5>categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/DB/">DB</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/DB/MySQL/">MySQL</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/DB/Redis/">Redis</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/HTML/">HTML</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Javascript/">Javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OOP/">OOP</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OS/">OS</a><span class="category-list-count">8</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/OS/shell/">shell</a><span class="category-list-count">8</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/">PHP</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/Extends/">Extends</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/Others/">Others</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/PHP/xdebug/">xdebug</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Tool/">Tool</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/excerpt/">excerpt</a><span class="category-list-count">1</span></li></ul>
+    </div>
+
+        <hr>
+    
+        <!-- Friends Blog -->
+
+<h5>FRIENDS</h5>
+<ul class="list-inline">
+
+    
+        <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
+    
+        <li><a href="http://blog.kaijun.rocks" target="_blank">Kaijun&#39;s Blog</a></li>
+    
+        <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
+    
+        <li><a href="#" target="_blank">It Helps SEO</a></li>
+    
+</ul>
+
+        <hr>
+    
+</div>
+
+        
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/leeong">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; leeong 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>
 
-    </div>
-    
-
+<!-- jQuery -->
 <script src="/js/jquery.min.js"></script>
-<script src="/js/jquery.scrollLoading.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
 
 
-<script src="/js/script.js"></script>
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://www.leeong.cn/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
 
-  </div>
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://www.leeong.cn/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
 </body>
+
 </html>
