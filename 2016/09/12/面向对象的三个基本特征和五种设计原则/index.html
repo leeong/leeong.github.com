@@ -210,7 +210,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h3 id="三个基本特征"><a href="#三个基本特征" class="headerlink" title="三个基本特征"></a>三个基本特征</h3><p>封装 继承 多态<br><img src="/upload/20160912/1-1.jpg" alt="封装 继承 多态"></p>
+                <h3 id="三个基本特征"><a href="#三个基本特征" class="headerlink" title="三个基本特征"></a>三个基本特征</h3><p>封装 继承 多态<br><img src="/img/upload/20160912/1-1.jpg" alt="封装 继承 多态"></p>
 <ul>
 <li><strong>封装</strong></li>
 </ul>
@@ -253,19 +253,19 @@
 <h3 id="泛化、聚合、组合、依赖概念"><a href="#泛化、聚合、组合、依赖概念" class="headerlink" title="泛化、聚合、组合、依赖概念"></a>泛化、聚合、组合、依赖概念</h3><ul>
 <li>泛化（Generalization）</li>
 </ul>
-<p><img src="/upload/20160912/1-2.jpg" alt="泛化"><br>在上图中，空心的三角表示继承关系（类继承），在UML的术语中，这种关系被称为泛化（<code>Generalization</code>）。Person(人)是基类，Teacher(教师)、Student(学生)、Guest(来宾)是子类。<br>若在逻辑上B是A的“一种”，并且A的所有功能和属性对B而言都有意义，则允许B继承A的功能和属性。<br>例如，教师是人，Teacher 是Person的“一种”（a kind of ）。那么类Teacher可以从类Person派生（继承）。<br>如果A是基类，B是A的派生类，那么B将继承A的数据和函数。<br>如果类A和类B毫不相关，不可以为了使B的功能更多些而让B继承A的功能和属性。<br>若在逻辑上B是A的“一种”（a kind of ），则允许B继承A的功能和属性。</p>
+<p><img src="/img/upload/20160912/1-2.jpg" alt="泛化"><br>在上图中，空心的三角表示继承关系（类继承），在UML的术语中，这种关系被称为泛化（<code>Generalization</code>）。Person(人)是基类，Teacher(教师)、Student(学生)、Guest(来宾)是子类。<br>若在逻辑上B是A的“一种”，并且A的所有功能和属性对B而言都有意义，则允许B继承A的功能和属性。<br>例如，教师是人，Teacher 是Person的“一种”（a kind of ）。那么类Teacher可以从类Person派生（继承）。<br>如果A是基类，B是A的派生类，那么B将继承A的数据和函数。<br>如果类A和类B毫不相关，不可以为了使B的功能更多些而让B继承A的功能和属性。<br>若在逻辑上B是A的“一种”（a kind of ），则允许B继承A的功能和属性。</p>
 <ul>
 <li>聚合（组合）</li>
 </ul>
-<p><img src="/upload/20160912/1-3.jpg" alt="聚合（组合）"><br>若在逻辑上A是B的“一部分”（a part of），则不允许B从A派生，而是要用A和其它东西组合出B。<br>例如，眼（Eye）、鼻（Nose）、口（Mouth）、耳（Ear）是头（Head）的一部分，所以类Head应该由类Eye、Nose、Mouth、Ear组合而成，不是派生（继承）而成。<br>聚合的类型分为无、共享(聚合)、复合(组合)三类。</p>
+<p><img src="/img/upload/20160912/1-3.jpg" alt="聚合（组合）"><br>若在逻辑上A是B的“一部分”（a part of），则不允许B从A派生，而是要用A和其它东西组合出B。<br>例如，眼（Eye）、鼻（Nose）、口（Mouth）、耳（Ear）是头（Head）的一部分，所以类Head应该由类Eye、Nose、Mouth、Ear组合而成，不是派生（继承）而成。<br>聚合的类型分为无、共享(聚合)、复合(组合)三类。</p>
 <ol>
-<li>聚合（aggregation）<br> <img src="/upload/20160912/1-4.jpg" alt="共享"><br> 上面图中，有一个菱形（空心）表示聚合（<code>aggregation</code>）（聚合类型为共享），聚合的意义表示has-a关系。聚合是一种相对松散的关系，聚合类B不需要对被聚合的类A负责。</li>
-<li>组合（composition）<br> <img src="/upload/20160912/1-5.jpg" alt="复合"><br> 这幅图与上面的唯一区别是菱形为实心的，它代表了一种更为坚固的关系——组合（<code>composition</code>）（聚合类型为复合）。组合表示的关系也是has-a，不过在这里，A的生命期受B控制。即A会随着B的创建而创建，随B的消亡而消亡。</li>
+<li>聚合（aggregation）<br> <img src="/img/upload/20160912/1-4.jpg" alt="共享"><br> 上面图中，有一个菱形（空心）表示聚合（<code>aggregation</code>）（聚合类型为共享），聚合的意义表示has-a关系。聚合是一种相对松散的关系，聚合类B不需要对被聚合的类A负责。</li>
+<li>组合（composition）<br> <img src="/img/upload/20160912/1-5.jpg" alt="复合"><br> 这幅图与上面的唯一区别是菱形为实心的，它代表了一种更为坚固的关系——组合（<code>composition</code>）（聚合类型为复合）。组合表示的关系也是has-a，不过在这里，A的生命期受B控制。即A会随着B的创建而创建，随B的消亡而消亡。</li>
 </ol>
 <ul>
 <li>依赖(Dependency)</li>
 </ul>
-<p><img src="/upload/20160912/1-6.jpg" alt="依赖"><br>这里B与A的关系只是一种依赖(<code>Dependency</code>)关系，这种关系表明，如果类A被修改，那么类B会受到影响。</p>
+<p><img src="/img/upload/20160912/1-6.jpg" alt="依赖"><br>这里B与A的关系只是一种依赖(<code>Dependency</code>)关系，这种关系表明，如果类A被修改，那么类B会受到影响。</p>
 <blockquote>
 <p>摘自 <a href="http://blog.csdn.net/cancan8538/article/details/8057095" target="_blank" rel="noopener">http://blog.csdn.net/cancan8538/article/details/8057095</a></p>
 </blockquote>
