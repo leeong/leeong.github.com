@@ -97,7 +97,7 @@
     </div>
 </header>
 
-	
+
     <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
@@ -132,13 +132,6 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
                             <a href="/about/">About</a>
                         </li>
                         
@@ -147,6 +140,13 @@
                         
                         <li>
                             <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -212,9 +212,9 @@
                 
                     <a href="#权限控制" title="权限控制" rel="1">权限控制</a>
                 
-                    <a href="#shell" title="shell" rel="8">shell</a>
-                
                     <a href="#摘录" title="摘录" rel="1">摘录</a>
+                
+                    <a href="#shell" title="shell" rel="8">shell</a>
                 
                     <a href="#Redis" title="Redis" rel="1">Redis</a>
                 
@@ -504,6 +504,28 @@
             </div>
             
             <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="摘录">
+                    <span class="tag-text">摘录</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2017/09/16/jQuery之父-坚持每天都要写代码/">
+                        <h2 class="post-title">
+                            jQuery之父:坚持每天都要写代码
+                        </h2>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
+            
+            <div class="one-tag-list">
                 <span class="fa fa-tag listing-seperator" id="shell">
                     <span class="tag-text">shell</span>
                 </span>
@@ -516,21 +538,6 @@
                      <a href="/2016/06/27/Shell编程常用命令/">
                         <h2 class="post-title">
                             Shell编程常用命令
-                        </h2>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/2016/06/27/Shell预订义变量/">
-                        <h2 class="post-title">
-                            Shell预订义变量
                         </h2>
                         
                     </a>
@@ -561,6 +568,21 @@
                      <a href="/2016/05/30/linux文件查找命令find/">
                         <h2 class="post-title">
                             linux文件查找命令find
+                        </h2>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/2016/06/27/Shell预订义变量/">
+                        <h2 class="post-title">
+                            Shell预订义变量
                         </h2>
                         
                     </a>
@@ -621,28 +643,6 @@
                      <a href="/2016/05/27/在linux上使用less查看文件/">
                         <h2 class="post-title">
                             在linux上使用less查看文件
-                        </h2>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="摘录">
-                    <span class="tag-text">摘录</span>
-                </span>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/2017/09/16/jQuery之父-坚持每天都要写代码/">
-                        <h2 class="post-title">
-                            jQuery之父:坚持每天都要写代码
                         </h2>
                         
                     </a>
@@ -987,7 +987,7 @@
 	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
     <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
 <!-- Image to hack wechat -->
-<img src="http://www.leeong.cn/img/icon_wechat.png" width="0" height="0" />
+<img src="http://www.leeong.cn/img/favicon.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
